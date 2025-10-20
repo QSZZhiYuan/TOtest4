@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "traveloptics:cradle_of_will"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.free_the_nightwarden.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.free_the_nightwarden.description"
+    },
+    "hidden": false,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:visit_void_cathedral",
+  "criteria": {
+    "the_nightwarden": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "traveloptics:the_nightwarden"
+        }
+      }
+    }
+  }
+}

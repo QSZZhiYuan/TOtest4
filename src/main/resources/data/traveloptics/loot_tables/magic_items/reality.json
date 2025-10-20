@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{filtered_title: \"Reality\", pages: [\"{\\\"text\\\":\\\"The world was changing. Machines, steam, metal—people believed that was the future. They laughed at magic, called it a child's story. But I knew better. I swore I would prove them wrong.\\\"}\"], title: \"Reality\", author: \"Unknown Mage\", resolved: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

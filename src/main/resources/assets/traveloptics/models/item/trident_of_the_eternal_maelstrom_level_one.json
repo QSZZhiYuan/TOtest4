@@ -1,0 +1,6 @@
+{
+  "parent": "traveloptics:displaysettings/trident_of_the_eternal_maelstrom_display",
+  "textures": {
+    "layer0": "traveloptics:item/trident_of_the_eternal_maelstrom"
+  }
+}

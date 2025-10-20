@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "traveloptics:displaysettings/scourge_of_the_sands_display"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "traveloptics:displaysettings/scourge_of_the_sands_gui"
+    }
+  }
+}

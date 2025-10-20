@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "traveloptics:frosted_cryostorm_bracelet"
+        }
+      ]
+    }
+  ]
+}

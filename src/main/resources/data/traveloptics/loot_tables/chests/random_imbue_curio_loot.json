@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "traveloptics:blood_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:aqua_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:lightning_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:ender_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:holy_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:evocation_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:fire_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:ice_echo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "traveloptics:nature_echo",
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 235
+        }
+      ]
+    }
+  ]
+}

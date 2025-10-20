@@ -1,0 +1,225 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.github.L_Ender.cataclysm.client.render.entity.Abyss_Blast_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Aptrgangr_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Death_Laser_beam_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Deepling_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Draugr_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Elite_Draugr_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Ender_Golem_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Flame_Strike_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Flare_Bomb_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Ignis_Fireball_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Ignited_Berserker_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Ignited_Revenant_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Kobolediator_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Koboleton_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Phantom_Arrow_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Phantom_Halberd_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Royal_Draugr_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Sandstorm_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Storm_Serpent_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.The_Prowler_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.The_Watcher_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Wadjet_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Water_Spear_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Wither_Homing_Missile_Renderer
+ *  com.github.L_Ender.cataclysm.client.render.entity.Wither_Howitzer_Renderer
+ *  io.redspace.ironsspellbooks.entity.mobs.dead_king_boss.DeadKingRenderer
+ *  net.minecraft.client.renderer.entity.NoopRenderer
+ *  net.minecraft.world.entity.EntityType
+ *  net.minecraftforge.api.distmarker.Dist
+ *  net.minecraftforge.client.event.EntityRenderersEvent$RegisterLayerDefinitions
+ *  net.minecraftforge.client.event.EntityRenderersEvent$RegisterRenderers
+ *  net.minecraftforge.eventbus.api.SubscribeEvent
+ *  net.minecraftforge.fml.common.Mod$EventBusSubscriber
+ *  net.minecraftforge.fml.common.Mod$EventBusSubscriber$Bus
+ */
+package com.gametechbc.traveloptics.render;
+
+import com.gametechbc.traveloptics.api.render.RendererNull;
+import com.gametechbc.traveloptics.entity.misc.stack_entity.StackEntityRenderer;
+import com.gametechbc.traveloptics.entity.mobs.aqua_grandmaster.AquaGrandmasterRenderer;
+import com.gametechbc.traveloptics.entity.mobs.aquamancer.AquamancerRenderer;
+import com.gametechbc.traveloptics.entity.mobs.fading_mage.FadingMageRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.NightwardenBossRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.nightwarden_clone.nightwarden_drop_slam_clone.NightwardenDropSlamCloneRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.nightwarden_clone.nightwarden_explode_clone.NightwardenExplodeCloneRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.nightwarden_clone.nightwarden_slam_clone.NightwardenSlamCloneRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.nightwarden_clone.nightwarden_slash_clone.NightwardenSlashCloneRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.nightwarden_clone.nightwarden_spin_clone.NightwardenSpinCloneRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.nightwarden_defeated.NightwardenDefeatedRenderer;
+import com.gametechbc.traveloptics.entity.mobs.nightwarden_boss.nightwarden_slash_visual.NightwardenVisualSlashRenderer;
+import com.gametechbc.traveloptics.entity.mobs.testwizard.TestWizardRenderer;
+import com.gametechbc.traveloptics.entity.mobs.void_tome.VoidTomeRenderer;
+import com.gametechbc.traveloptics.entity.mobs.voidshelf_golem.VoidshelfGolemRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.aqua_trident.EternalMaelstromTridentRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.aqua_vortex.AquaVortexRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.asteroid.AsteroidRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.coral_bolt.BlueCoralBoltRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.coral_bolt.PinkCoralBoltRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.coral_bolt.RedCoralBoltRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.coral_bolt.YellowCoralBoltRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.dimensional_spike.DimensionalSpikeEntityRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.dragon_spirit.DragonSpiritRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.dragon_spirit_spell_entity.DragonSpiritSpellRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.end_eruption_bomb.EruptionBombProjectileRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.flood_slash.FloodSlashProjectileRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.gyro_slash.GyroSlashProjectileRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.gyro_slash.GyroSlashVisualRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.hydroshot.HydroshotRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.maelstrom.MaelstromRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.maelstrom_trident_phantom.MaelstromTridentPhantomRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.psychic_bolt.PsychicBoltRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.reversal.ReversalRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.stellothorn_projectile.StellothornProjectileRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.supernova.dying_star.DyingStarRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.supernova.supermassive_black_hole.SupermassiveBlackHoleRenderer;
+import com.gametechbc.traveloptics.entity.projectiles.void_slash.VoidSlashProjectileRenderer;
+import com.gametechbc.traveloptics.init.TravelopticsEntities;
+import com.github.L_Ender.cataclysm.client.render.entity.Abyss_Blast_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Aptrgangr_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Death_Laser_beam_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Deepling_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Draugr_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Elite_Draugr_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Ender_Golem_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Flame_Strike_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Flare_Bomb_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Ignis_Fireball_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Ignited_Berserker_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Ignited_Revenant_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Kobolediator_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Koboleton_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Phantom_Arrow_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Phantom_Halberd_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Royal_Draugr_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Sandstorm_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Storm_Serpent_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.The_Prowler_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.The_Watcher_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Wadjet_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Water_Spear_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Wither_Homing_Missile_Renderer;
+import com.github.L_Ender.cataclysm.client.render.entity.Wither_Howitzer_Renderer;
+import io.redspace.ironsspellbooks.entity.mobs.dead_king_boss.DeadKingRenderer;
+import net.minecraft.client.renderer.entity.NoopRenderer;
+import net.minecraft.world.entity.EntityType;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod.EventBusSubscriber(modid="traveloptics", bus=Mod.EventBusSubscriber.Bus.MOD, value={Dist.CLIENT})
+public class TravelopticsEntityRenderers {
+    @SubscribeEvent
+    public static void onRegisterLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(AsteroidRenderer.MODEL_LAYER_LOCATION, AsteroidRenderer::createModel);
+        event.registerLayerDefinition(HydroshotRenderer.MODEL_LAYER_LOCATION, HydroshotRenderer::createModel);
+        event.registerLayerDefinition(BlueCoralBoltRenderer.MODEL_LAYER_LOCATION, BlueCoralBoltRenderer::createModel);
+        event.registerLayerDefinition(RedCoralBoltRenderer.MODEL_LAYER_LOCATION, RedCoralBoltRenderer::createModel);
+        event.registerLayerDefinition(YellowCoralBoltRenderer.MODEL_LAYER_LOCATION, YellowCoralBoltRenderer::createModel);
+        event.registerLayerDefinition(PinkCoralBoltRenderer.MODEL_LAYER_LOCATION, PinkCoralBoltRenderer::createModel);
+        event.registerLayerDefinition(PsychicBoltRenderer.MODEL_LAYER_LOCATION, PsychicBoltRenderer::createModel);
+    }
+
+    @SubscribeEvent
+    public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.TEST_WIZARD.get(), TestWizardRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_BOSS.get(), NightwardenBossRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.REVERSAL.get(), ReversalRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.ASHEN_BREATH_PROJECTILE.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.CURSED_VOLLEY_ENTITY.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.WATER_FIELD.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.ENSNARE.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.BLACKOUT_ANTI_MAGIC_FIELD.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.TECTONIC_RIFT_FIELD.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.ASTEROID.get(), context -> new AsteroidRenderer(context, 15.0f));
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.ASTEROID_IMPACT_CRATER.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.GYRO_SLASH_PROJECTILE.get(), GyroSlashProjectileRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.GYRO_SLASH_VISUAL.get(), GyroSlashVisualRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.AQUA_VORTEX_ENTITY.get(), AquaVortexRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.BUBBLE_SPRAY_PROJECTILE.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.HYDROSHOT_PROJECTILE.get(), HydroshotRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.RAINFALL_ENTITY.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.ACID_RAIN_ENTITY.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.FLOOD_SLASH_PROJECTILE.get(), FloodSlashProjectileRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.BLUE_CORAL_BOLT_PROJECTILE.get(), BlueCoralBoltRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.YELLOW_CORAL_BOLT_PROJECTILE.get(), YellowCoralBoltRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.RED_CORAL_BOLT_PROJECTILE.get(), RedCoralBoltRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.PINK_CORAL_BOLT_PROJECTILE.get(), PinkCoralBoltRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.AQUAMANCER_ENTITY.get(), AquamancerRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.AQUA_GRANDMASTER_ENTITY.get(), AquaGrandmasterRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.AERIAL_COLLAPSE_VISUAL_ENTITY.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.PSYCHIC_BOLT_PROJECTILE.get(), PsychicBoltRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.ETERNAL_MAELSTROM_TRIDENT_ENTITY.get(), EternalMaelstromTridentRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.MAELSTROM_ENTITY.get(), MaelstromRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.VOID_TOME_ENTITY.get(), VoidTomeRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_SLASH_VISUAL_ENTITY.get(), NightwardenVisualSlashRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_EXPLODE_CLONE.get(), NightwardenExplodeCloneRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.DRAGON_SPIRIT_ENTITY.get(), DragonSpiritRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.VOIDSHELF_GOLEM_ENTITY.get(), VoidshelfGolemRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_DEFEATED.get(), NightwardenDefeatedRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.FADING_MAGE.get(), FadingMageRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.VOID_SLASH_PROJECTILE.get(), VoidSlashProjectileRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_SLASH_CLONE.get(), NightwardenSlashCloneRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_SLAM_CLONE.get(), NightwardenSlamCloneRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.BLIZZARD_ENTITY.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUPERMASSIVE_BLACK_HOLE.get(), SupermassiveBlackHoleRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.DYING_STAR.get(), DyingStarRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_SPIN_CLONE.get(), NightwardenSpinCloneRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.NIGHTWARDEN_DROP_SLAM_CLONE.get(), NightwardenDropSlamCloneRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.END_ERUPTION.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.STELLOTHORN_PROJECTILE.get(), StellothornProjectileRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.END_ERUPTION_BOMB.get(), EruptionBombProjectileRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.DRAGON_SPIRIT_SPELL_ENTITY.get(), DragonSpiritSpellRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.STELLAR_TRAIL_AOE.get(), NoopRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.DIMENSIONAL_SPIKE.get(), DimensionalSpikeEntityRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.MAELSTROM_TRIDENT_PHANTOM.get(), MaelstromTridentPhantomRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SCREEN_SHAKE.get(), RendererNull::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SCREEN_FLASH.get(), RendererNull::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SCREEN_POWER_INVERSION.get(), RendererNull::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.FOLLOWING_SCREEN_SHAKE.get(), RendererNull::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.STACK.get(), StackEntityRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_PHANTOM_ARROW.get(), Phantom_Arrow_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_SANDSTORM.get(), Sandstorm_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_IGNIS_FIREBALL.get(), Ignis_Fireball_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_WATER_BOLT.get(), WaterBoltRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_WITHER_HOWITZER.get(), Wither_Howitzer_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.ENRAGED_DEAD_KING.get(), DeadKingRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_DEATH_LASER.get(), Death_Laser_beam_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_ABYSS_BLAST.get(), Abyss_Blast_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_FLARE_BOMB.get(), Flare_Bomb_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_WAVE.get(), WaveRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_WITHER_HOMING_MISSILE.get(), Wither_Homing_Missile_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_PHANTOM_HALBERD.get(), Phantom_Halberd_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_WATER_SPEAR.get(), Water_Spear_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_STORM_SERPENT.get(), Storm_Serpent_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.EXTENDED_FLAME_STRIKE.get(), Flame_Strike_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_KOBOLETON.get(), Koboleton_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_DEEPLING.get(), Deepling_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_KOBOLEDIATOR.get(), Kobolediator_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_WADJET.get(), Wadjet_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_MAGNETRON.get(), MagnetronRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_THE_PROWLER.get(), The_Prowler_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_THE_WATCHER.get(), The_Watcher_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_GUM_WORM.get(), GumWormRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_FORSAKEN.get(), ForsakenRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_VALLUMRAPTOR.get(), VallumraptorRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_TREMORSAURUS.get(), TremorsaurusRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_ATLATITAN.get(), AtlatitanRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_VESPER.get(), VesperRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_IGNITED_REVENANT.get(), Ignited_Revenant_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_IGNITED_BERSERKER.get(), Ignited_Berserker_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_ENDER_GOLEM.get(), Ender_Golem_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_DRAUGR.get(), Draugr_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_ELITE_DRAUGR.get(), Elite_Draugr_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_ROYAL_DRAUGR.get(), Royal_Draugr_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_APTRGANGR.get(), Aptrgangr_Renderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_HULLBREAKER.get(), HullbreakerRenderer::new);
+        event.registerEntityRenderer((EntityType)TravelopticsEntities.SUMMONED_VOID_TOME.get(), VoidTomeRenderer::new);
+    }
+}
+

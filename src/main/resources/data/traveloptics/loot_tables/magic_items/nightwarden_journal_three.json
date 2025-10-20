@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{author:\"GameTechBC\",filtered_title:\"Journal #3\",pages:['{\"text\":\"I call him...\\\\n\\\\nHe who gave up being, to keep a promise.\"}','{\"text\":\"IF you\\'re reading this, and you are that someone, look for a weird spike on a pedestal.\\\\nIt\\'s not ordinary. If you\\'re worthy enough, you can use that to save him from the stasis. But understand what that means.\"}','{\"text\":\"You won\\'t be waking him.\\\\n\\\\nYou\\'ll be setting him free - by ending what remains of him here.\\\\n\\\\nWhatever left of his body can\\'t hold on much longer.\\\\n\\\\nThat magic.. that stasis.. it\\'s not life.\"}','{\"text\":\"It\\'s a prison made of everything he lost.\\\\n\\\\n\\\\nIt\\'s not saving him  for us. Maybe it\\'s just something we can do for him - so he can rest easier. Closer to the one he lost.\"}','{\"text\":\"\\\\n\\\\n\\\\nWhatever you decide - do it for the right reasons. Not glory. Not power. But for the quiet, unseen stories that still deserve an ending...\"}'],resolved:1b,title:\"Journal #3\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

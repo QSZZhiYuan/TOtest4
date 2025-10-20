@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "cataclysm:chests/acropolis_treasure"
+    }
+  ],
+  "key": "traveloptics:chests/acropolis_treasure_additions"
+}

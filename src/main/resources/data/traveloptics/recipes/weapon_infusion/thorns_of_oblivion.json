@@ -1,0 +1,12 @@
+{
+  "type": "cataclysm:weapon_fusion",
+  "base": {
+    "item": "traveloptics:scourge_of_the_sands"
+  },
+  "addition": {
+    "item": "traveloptics:tome_of_abyssal_flora"
+  },
+  "result": {
+    "item": "traveloptics:thorns_of_oblivion"
+  }
+}

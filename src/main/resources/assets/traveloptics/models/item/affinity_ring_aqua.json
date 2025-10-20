@@ -1,0 +1,5 @@
+{ "parent": "item/generated",
+  "textures": {
+    "layer0": "traveloptics:item/affinity_ring_aqua"
+  }
+}

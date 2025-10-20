@@ -1,0 +1,51 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:cursed_wraithguard_chestplate"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.full_set_cursed_wraithguard.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.full_set_cursed_wraithguard.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "wraithguard_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:cursed_wraithguard_crown"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:cursed_wraithguard_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:cursed_wraithguard_spectral_wrapping"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:cursed_wraithguard_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["wraithguard_armor"]],
+  "rewards": {
+    "experience": 100
+  }
+}

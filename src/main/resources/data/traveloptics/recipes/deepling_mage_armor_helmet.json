@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "   ",
+    "AAA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "B": {
+      "item": "traveloptics:aqua_rune"
+    }
+  },
+  "result": {
+    "item": "traveloptics:deepling_mage_armor_helmet",
+    "count": 1
+  },
+  "show_notification": true
+}

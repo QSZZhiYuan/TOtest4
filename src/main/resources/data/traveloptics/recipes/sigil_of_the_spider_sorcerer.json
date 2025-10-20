@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ABA",
+    "A A",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "B": {
+      "item": "minecraft:poisonous_potato"
+    },
+    "C": {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  },
+  "result": {
+    "item": "traveloptics:sigil_of_the_spider_sorcerer",
+    "count": 1
+  },
+  "show_notification": false
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:void_spellweave_ingot"
+  },
+  "base": {
+    "item": "traveloptics:voidstrike_reaper_level_one"
+  },
+  "result": {
+    "item": "traveloptics:voidstrike_reaper_level_two"
+  },
+  "template": {
+    "item": "cataclysm:void_core"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:abyssal_spellweave_ingot"
+  },
+  "base": {
+    "item": "traveloptics:the_obliterator"
+  },
+  "result": {
+    "item": "traveloptics:the_obliterator_level_one"
+  },
+  "template": {
+    "item": "traveloptics:abyssal_tentacle"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:mechanized_wraithblade_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.mechanized_wraithblade_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.mechanized_wraithblade_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:mechanized_wraithblade",
+  "criteria": {
+    "max_mech_wraithblade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:mechanized_wraithblade_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_mech_wraithblade"]],
+  "rewards": {
+    "experience": 500
+  }
+}

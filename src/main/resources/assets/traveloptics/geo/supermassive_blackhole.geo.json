@@ -1,0 +1,133 @@
+{
+	"warning": "Made by GameTechBC for T.O Tweaks mod, others are NOT allowed to use this model for their own project. You project will be taken down and a LEGAL action might be taken!",
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "hole",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, -7, -8],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {"uv": [78, 0], "uv_size": [16, 16]},
+								"east": {"uv": [78, 16], "uv_size": [16, 16]},
+								"south": {"uv": [78, 32], "uv_size": [16, 16]},
+								"west": {"uv": [78, 48], "uv_size": [16, 16]},
+								"up": {"uv": [78, 64], "uv_size": [16, 16]},
+								"down": {"uv": [78, 96], "uv_size": [16, -16]}
+							}
+						},
+						{
+							"origin": [8, -6, -7],
+							"size": [2, 14, 14],
+							"uv": {
+								"north": {"uv": [108, 28], "uv_size": [2, 14]},
+								"east": {"uv": [94, 0], "uv_size": [14, 14]},
+								"south": {"uv": [108, 42], "uv_size": [2, 14]},
+								"west": {"uv": [94, 14], "uv_size": [14, 14]},
+								"up": {"uv": [108, 56], "uv_size": [2, 14]},
+								"down": {"uv": [108, 84], "uv_size": [2, -14]}
+							}
+						},
+						{
+							"origin": [-10, -6, -7],
+							"size": [2, 14, 14],
+							"uv": {
+								"north": {"uv": [108, 84], "uv_size": [2, 14]},
+								"east": {"uv": [94, 28], "uv_size": [14, 14]},
+								"south": {"uv": [110, 28], "uv_size": [2, 14]},
+								"west": {"uv": [94, 42], "uv_size": [14, 14]},
+								"up": {"uv": [110, 42], "uv_size": [2, 14]},
+								"down": {"uv": [110, 70], "uv_size": [2, -14]}
+							}
+						},
+						{
+							"origin": [-7, -6, 8],
+							"size": [14, 14, 2],
+							"uv": {
+								"north": {"uv": [94, 56], "uv_size": [14, 14]},
+								"east": {"uv": [110, 70], "uv_size": [2, 14]},
+								"south": {"uv": [94, 70], "uv_size": [14, 14]},
+								"west": {"uv": [78, 110], "uv_size": [2, 14]},
+								"up": {"uv": [110, 84], "uv_size": [14, 2]},
+								"down": {"uv": [110, 88], "uv_size": [14, -2]}
+							}
+						},
+						{
+							"origin": [-7, 9, -7],
+							"size": [14, 2, 14],
+							"uv": {
+								"north": {"uv": [110, 92], "uv_size": [14, 2]},
+								"east": {"uv": [110, 94], "uv_size": [14, 2]},
+								"south": {"uv": [110, 96], "uv_size": [14, 2]},
+								"west": {"uv": [112, 28], "uv_size": [14, 2]},
+								"up": {"uv": [92, 98], "uv_size": [14, 14]},
+								"down": {"uv": [106, 112], "uv_size": [14, -14]}
+							}
+						},
+						{
+							"origin": [-7, -9, -7],
+							"size": [14, 2, 14],
+							"uv": {
+								"north": {"uv": [112, 30], "uv_size": [14, 2]},
+								"east": {"uv": [112, 32], "uv_size": [14, 2]},
+								"south": {"uv": [112, 34], "uv_size": [14, 2]},
+								"west": {"uv": [112, 36], "uv_size": [14, 2]},
+								"up": {"uv": [108, 0], "uv_size": [14, 14]},
+								"down": {"uv": [108, 28], "uv_size": [14, -14]}
+							}
+						},
+						{
+							"origin": [-7, -6, -10],
+							"size": [14, 14, 2],
+							"uv": {
+								"north": {"uv": [94, 84], "uv_size": [14, 14]},
+								"east": {"uv": [80, 110], "uv_size": [2, 14]},
+								"south": {"uv": [78, 96], "uv_size": [14, 14]},
+								"west": {"uv": [82, 110], "uv_size": [2, 14]},
+								"up": {"uv": [110, 88], "uv_size": [14, 2]},
+								"down": {"uv": [110, 92], "uv_size": [14, -2]}
+							}
+						}
+					]
+				},
+				{
+					"name": "event_horizon",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-39, 1, -39],
+							"size": [78, 0, 78],
+							"inflate": 0.001,
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [78, 0]},
+								"east": {"uv": [0, 0], "uv_size": [78, 0]},
+								"south": {"uv": [0, 0], "uv_size": [78, 0]},
+								"west": {"uv": [0, 0], "uv_size": [78, 0]},
+								"up": {"uv": [0, 0], "uv_size": [78, 78]},
+								"down": {"uv": [0, 156], "uv_size": [78, -78]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,197 @@
+{
+  "conditions": [{
+    "type": "forge:mod_loaded",
+    "modid": "skilltree"
+  }],
+  "bonuses": [
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "irons_spellbooks:cast_time_reduction",
+            "id": "127a09b2-d230-4674-ae43-9a31e8fe39f0",
+            "name": "Mystara",
+            "amount": 0.03,
+            "operation": 1,
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "item_condition": {
+                "id": "traveloptics:abyssal_tidecaller",
+                "type": "skilltree:item_id"
+              },
+              "type": "skilltree:has_item_in_hand"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "weapon",
+        "types": [
+          "bow",
+          "sword",
+          "heavy_weapon",
+          "trident",
+          "crossbow"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:attribute",
+          "attribute": "irons_spellbooks:mana_regen",
+          "id": "057b205b-4958-4a34-b398-e4b20d76fe27",
+          "name": "Mystara",
+          "amount": 0.03,
+          "operation": 1,
+          "player_multiplier": {
+            "type": "skilltree:none"
+          },
+          "player_condition": {
+            "type": "skilltree:none"
+          }
+
+        }
+      },
+      "gem_class": {
+        "key": "chestplate",
+        "types": [
+          "chestplate"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:attribute",
+          "attribute": "attributeslib:healing_received",
+          "id": "208524d4-0c80-40f5-ad1d-09009c29b69f",
+          "name": "Mystara",
+          "amount": 0.03,
+          "operation": 1,
+          "player_multiplier": {
+            "type": "skilltree:none"
+          },
+          "player_condition": {
+            "type": "skilltree:none"
+          }
+
+        }
+      },
+      "gem_class": {
+        "key": "helmet",
+        "types": [
+          "helmet"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:attribute",
+          "attribute": "attributeslib:dodge_chance",
+          "id": "da2c5f6f-6619-46e4-8b16-2c5b9531ae55",
+          "name": "Mystara",
+          "amount": 0.03,
+          "operation": 1,
+          "player_multiplier": {
+            "type": "skilltree:none"
+          },
+          "player_condition": {
+            "type": "skilltree:none"
+          }
+        }
+      },
+      "gem_class": {
+        "key": "boots",
+        "types": [
+          "boots"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:mob_effect",
+            "chance": 0.05,
+            "effect": "cataclysm:blazing_brand",
+            "duration": 100,
+            "amplifier": 0,
+            "event_listener": {
+              "damage_condition": {
+                "type": "skilltree:none"
+              },
+              "enemy_condition": {
+                "type": "skilltree:none"
+              },
+              "player_condition": {
+                "type": "skilltree:none"
+              },
+              "enemy_multiplier": {
+                "type": "skilltree:none"
+              },
+              "player_multiplier": {
+                "type": "skilltree:none"
+              },
+              "target": "enemy",
+              "type": "skilltree:block"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "shield",
+        "types": [
+          "shield"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "irons_spellbooks:mana_regen",
+            "id": "e000c409-7088-4b51-aae4-13e87e36fe6c",
+            "name": "Mystara",
+            "amount": 0.06,
+            "operation": 1,
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "max": 0.3,
+              "type": "skilltree:health_percentage"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "jewelry",
+        "types": [
+          "curios:necklace",
+          "curios:ring"
+        ]
+      }
+    }
+  ],
+  "dimensions": [
+    "skilltree:fake_dimension"
+  ],
+  "max_rarity": "rare",
+  "min_rarity": "rare",
+  "weight": 0
+}

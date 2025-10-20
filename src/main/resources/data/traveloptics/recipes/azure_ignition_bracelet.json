@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ABB",
+    "BCB",
+    "BB "
+  ],
+  "key": {
+    "A": {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    "B": {
+      "item": "minecraft:nether_brick"
+    },
+    "C": {
+      "item": "irons_spellbooks:arcane_ingot"
+    }
+  },
+  "result": {
+    "item": "traveloptics:azure_ignition_bracelet",
+    "count": 1
+  }
+}

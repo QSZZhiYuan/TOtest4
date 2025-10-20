@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    }
+  ],
+  "key": "traveloptics:chests/ancient_city_additions"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:thorns_of_oblivion"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.thorns_of_oblivion.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.thorns_of_oblivion.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:scourge_of_the_sands",
+  "criteria": {
+    "get_thorns": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:thorns_of_oblivion"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_thorns"]],
+  "rewards": {
+    "experience": 100
+  }
+}

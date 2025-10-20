@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "cataclysm:entities/amethyst_crab"
+    }
+  ],
+  "key": "traveloptics:entities/amethyst_crab_additions_new"
+}

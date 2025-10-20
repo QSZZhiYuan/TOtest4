@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "traveloptics:block/obsidian_shelf_top",
+    "up": "traveloptics:block/obsidian_shelf_top",
+    "north": "traveloptics:block/obsidian_shelf_side",
+    "east": "traveloptics:block/obsidian_shelf_side",
+    "south": "traveloptics:block/obsidian_shelf_side",
+    "west": "traveloptics:block/obsidian_shelf_side",
+    "particle": "traveloptics:block/obsidian_shelf_top"
+  },
+  "render_type": "solid"
+}

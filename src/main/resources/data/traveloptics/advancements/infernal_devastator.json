@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:infernal_devastator"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.infernal_devastator.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.infernal_devastator.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_devastator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:infernal_devastator"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_devastator"]],
+  "rewards": {
+    "experience": 125
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "traveloptics:item/spellbooks/codex_of_the_crushing_depths_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "traveloptics:item/spellbooks/codex_of_the_crushing_depths_gui"
+    }
+  }
+}

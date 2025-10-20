@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:echo_shard"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.discover_echo_shrine.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.discover_echo_shrine.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "task"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "echo_shrine": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "traveloptics:echo_shrine"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  }
+}

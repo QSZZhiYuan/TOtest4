@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:mechanized_wraithblade"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.mechanized_wraithblade.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.mechanized_wraithblade.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:cursed_wraithblade",
+  "criteria": {
+    "get_mech_wraithblade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:mechanized_wraithblade"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_mech_wraithblade"]],
+  "rewards": {
+    "experience": 200
+  }
+}

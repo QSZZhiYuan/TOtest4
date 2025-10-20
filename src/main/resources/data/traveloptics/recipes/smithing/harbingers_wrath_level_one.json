@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cataclysm:witherite_ingot"
+  },
+  "base": {
+    "item": "traveloptics:harbingers_wrath"
+  },
+  "result": {
+    "item": "traveloptics:harbingers_wrath_level_one"
+  },
+  "template": {
+    "item": "traveloptics:last_glow"
+  }
+}

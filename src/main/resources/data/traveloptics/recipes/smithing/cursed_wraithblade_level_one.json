@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cataclysm:cursium_ingot"
+  },
+  "base": {
+    "item": "traveloptics:cursed_wraithblade"
+  },
+  "result": {
+    "item": "traveloptics:cursed_wraithblade_level_one"
+  },
+  "template": {
+    "item": "traveloptics:echo_winglet"
+  }
+}

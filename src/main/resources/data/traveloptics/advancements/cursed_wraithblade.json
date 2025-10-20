@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:cursed_wraithblade"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.cursed_wraithblade.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.cursed_wraithblade.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_wraithblade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:cursed_wraithblade"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_wraithblade"]],
+  "rewards": {
+    "experience": 150
+  }
+}

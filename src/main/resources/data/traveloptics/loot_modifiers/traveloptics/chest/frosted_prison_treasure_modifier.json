@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "cataclysm:chests/frosted_prison_treasure"
+    }
+  ],
+  "key": "traveloptics:chests/frosted_prison_treasure_additions"
+}

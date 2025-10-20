@@ -1,0 +1,278 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.github.L_Ender.cataclysm.entity.projectile.Ancient_Desert_Stele_Entity
+ *  com.github.L_Ender.cataclysm.init.ModItems
+ *  com.github.L_Ender.cataclysm.init.ModParticle
+ *  com.github.L_Ender.cataclysm.init.ModSounds
+ *  io.redspace.ironsspellbooks.api.registry.AttributeRegistry
+ *  io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder
+ *  io.redspace.ironsspellbooks.util.ItemPropertiesHelper
+ *  net.minecraft.ChatFormatting
+ *  net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer
+ *  net.minecraft.core.particles.ParticleOptions
+ *  net.minecraft.network.chat.Component
+ *  net.minecraft.sounds.SoundEvent
+ *  net.minecraft.sounds.SoundSource
+ *  net.minecraft.util.Mth
+ *  net.minecraft.world.InteractionHand
+ *  net.minecraft.world.InteractionResult
+ *  net.minecraft.world.InteractionResultHolder
+ *  net.minecraft.world.entity.Entity
+ *  net.minecraft.world.entity.LivingEntity
+ *  net.minecraft.world.entity.ai.attributes.Attribute
+ *  net.minecraft.world.entity.ai.attributes.AttributeModifier
+ *  net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation
+ *  net.minecraft.world.entity.player.Player
+ *  net.minecraft.world.item.Item
+ *  net.minecraft.world.item.ItemDisplayContext
+ *  net.minecraft.world.item.ItemStack
+ *  net.minecraft.world.item.Tier
+ *  net.minecraft.world.item.TooltipFlag
+ *  net.minecraft.world.item.UseAnim
+ *  net.minecraft.world.item.crafting.Ingredient
+ *  net.minecraft.world.level.ItemLike
+ *  net.minecraft.world.level.Level
+ *  net.minecraft.world.phys.Vec3
+ *  net.minecraftforge.api.distmarker.Dist
+ *  net.minecraftforge.api.distmarker.OnlyIn
+ */
+package com.gametechbc.traveloptics.item.bossweapon.scourgeofthesands;
+
+import com.gametechbc.traveloptics.config.WeaponConfig;
+import com.gametechbc.traveloptics.data_manager.WeaponFormManager;
+import com.gametechbc.traveloptics.entity.extended_projectiles.ExtendedSandstormEntity;
+import com.gametechbc.traveloptics.entity.item.scourge_of_the_sands.evo_three.ScourgeOfTheSandsLevelThreeRenderer;
+import com.gametechbc.traveloptics.init.TravelopticsItems;
+import com.gametechbc.traveloptics.init.TravelopticsSounds;
+import com.gametechbc.traveloptics.item.UnbreakableGeoMagicSword;
+import com.gametechbc.traveloptics.item.bossweapon.scourgeofthesands.ScourgeOfTheSandsAbility;
+import com.github.L_Ender.cataclysm.entity.projectile.Ancient_Desert_Stele_Entity;
+import com.github.L_Ender.cataclysm.init.ModItems;
+import com.github.L_Ender.cataclysm.init.ModParticle;
+import com.github.L_Ender.cataclysm.init.ModSounds;
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
+import io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder;
+import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Mth;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+
+public class ScourgeOfTheSandsLevelThreeItem
+extends UnbreakableGeoMagicSword {
+    private static final int FORM_SANDSTORM = 0;
+    private static final int FORM_BASE = 1;
+    private static ItemDisplayContext transformType;
+    private static final ScourgeOfTheSandsAbility ABILITY;
+
+    public ScourgeOfTheSandsLevelThreeItem(SpellDataRegistryHolder[] imbuedSpells) {
+        super(new Tier(){
+
+            public int getUses() {
+                return (Integer)WeaponConfig.scourgeSandsDurability.get();
+            }
+
+            public float getSpeed() {
+                return 2.0f;
+            }
+
+            public float getAttackDamageBonus() {
+                return 0.0f;
+            }
+
+            public int getLevel() {
+                return 1;
+            }
+
+            public int getEnchantmentValue() {
+                return 20;
+            }
+
+            public Ingredient getRepairIngredient() {
+                return Ingredient.valueFromJson((ItemStack[])new ItemStack[]{new ItemStack((ItemLike)ModItems.ANCIENT_METAL_INGOT.get())});
+            }
+        }, (Double)WeaponConfig.scourgeSandsDamage.get(), (Double)WeaponConfig.scourgeSandsAttackSpeed.get(), imbuedSpells, Map.of((Attribute)AttributeRegistry.HOLY_SPELL_POWER.get(), new AttributeModifier(UUID.fromString("8ff095c4-a26d-4d28-bc06-1a908b3577aa"), "Weapon Modifier", ((Double)WeaponConfig.scourgeSandsEvocationSpellPower.get()).doubleValue(), AttributeModifier.Operation.MULTIPLY_BASE), (Attribute)AttributeRegistry.NATURE_SPELL_POWER.get(), new AttributeModifier(UUID.fromString("8ff095c4-a26d-4d28-bc06-1a908b3577aa"), "Weapon Modifier", ((Double)WeaponConfig.scourgeSandsNatureSpellPower.get()).doubleValue(), AttributeModifier.Operation.MULTIPLY_BASE)), ItemPropertiesHelper.hidden((int)1).requiredFeatures(TravelopticsItems.RARITY_ANCIENT));
+    }
+
+    public void canBeHurtBy(Level worldIn, LivingEntity livingEntityIn, ItemStack stack, int count) {
+        int i = this.getUseDuration(stack) - count;
+        if (i == 5) {
+            this.massEffectParticle(worldIn, livingEntityIn, 3.0f);
+        }
+        if (i == 10) {
+            this.massEffectParticle(worldIn, livingEntityIn, 4.5f);
+        }
+        if (i == 20) {
+            this.massEffectParticle(worldIn, livingEntityIn, 6.0f);
+            livingEntityIn.updateTutorialInventoryAction((SoundEvent)ModSounds.REMNANT_ROAR.get(), 1.0f, 1.0f);
+        }
+    }
+
+    private void massEffectParticle(Level world, LivingEntity caster, float radius) {
+        if (world.isClientSide) {
+            for (int j = 0; j < 70; ++j) {
+                float angle = (float)(Math.random() * 2.0 * Math.PI);
+                double distance = Math.sqrt(Math.random()) * (double)radius;
+                double extraX = caster.getX() + distance * (double)Mth.randomBetween((float)angle);
+                double extraY = caster.getY() + (double)0.3f;
+                double extraZ = caster.getZ() + distance * (double)Mth.outFromOrigin((float)angle);
+                world.addDestroyBlockEffect((ParticleOptions)ModParticle.SANDSTORM.get(), extraX, extraY, extraZ, 0.0, world.random.nextGaussian() * 0.04, 0.0);
+            }
+        }
+    }
+
+    public InteractionResultHolder<ItemStack> resolvePage(Level world, Player player, InteractionHand hand) {
+        ItemStack stack = player.getStandingEyeHeight(hand);
+        if (player.isCrouching()) {
+            WeaponFormManager.cycleForm(stack, 2);
+            int newForm = WeaponFormManager.getForm(stack);
+            if (newForm == 0) {
+                player.updateTutorialInventoryAction((Component)Component.translatable((String)"item.traveloptics.scourge_of_the_sands.tooltip.manifestation0").withStyle(ChatFormatting.LIGHT_PURPLE), true);
+            } else {
+                player.updateTutorialInventoryAction((Component)Component.translatable((String)"item.traveloptics.scourge_of_the_sands.tooltip.manifestation1").withStyle(ChatFormatting.LIGHT_PURPLE), true);
+            }
+            if (!world.isClientSide()) {
+                world.getChunk(null, player.getX(), player.getY(), player.getZ(), (SoundEvent)TravelopticsSounds.MANIFESTATION_CHANGE.get(), SoundSource.PLAYERS, 1.0f, 1.0f);
+            }
+            return InteractionResultHolder.sidedSuccess((Object)stack, (boolean)world.isClientSide());
+        }
+        player.vehicleCanSprint(hand);
+        return new InteractionResultHolder(InteractionResult.SUCCESS, (Object)stack);
+    }
+
+    public void getDefaultAttributeModifiers(ItemStack stack, Level world, LivingEntity entity, int timeLeft) {
+        if (entity instanceof Player) {
+            Player player = (Player)entity;
+            int chargeDuration = this.getUseDuration(stack) - timeLeft;
+            float power = ScourgeOfTheSandsLevelThreeItem.getPowerForTime(chargeDuration);
+            if (power >= 1.0f) {
+                int currentForm = WeaponFormManager.getForm(stack);
+                if (currentForm == 1) {
+                    player.updateTutorialInventoryAction((SoundEvent)ModSounds.REMNANT_STOMP.get(), 1.0f, 1.0f);
+                    this.spawnDesertStele(player, world);
+                    player.getCooldowns().addCooldown((Item)this, 100);
+                } else {
+                    player.updateTutorialInventoryAction((SoundEvent)ModSounds.REMNANT_STOMP.get(), 1.0f, 1.0f);
+                    this.spawnSandstormEntities(player, world);
+                    player.getCooldowns().addCooldown((Item)this, 260);
+                }
+                List<Item> itemsToCooldown = List.of((Item)TravelopticsItems.SCOURGE_OF_THE_SANDS_LEVEL_TWO.get());
+                for (int i = 0; i < player.getInventory().removeItemNoUpdate(); ++i) {
+                    ItemStack invStack = player.getInventory().setItems(i);
+                    if (invStack.onUseTick() || !itemsToCooldown.contains(invStack.setRepairCost())) continue;
+                    player.getCooldowns().addCooldown(invStack.setRepairCost(), 200);
+                }
+            }
+        }
+    }
+
+    public UseAnim getEnchantmentValue(ItemStack stack) {
+        return UseAnim.BOW;
+    }
+
+    public int getUseDuration(ItemStack stack) {
+        return 72000;
+    }
+
+    private static float getPowerForTime(int charge) {
+        float f = (float)charge / 20.0f;
+        if ((f = (f * f + f * 2.0f) / 3.0f) > 1.0f) {
+            f = 1.0f;
+        }
+        return f;
+    }
+
+    private void spawnSandstormEntities(Player player, Level world) {
+        Attribute holyPower = (Attribute)AttributeRegistry.HOLY_SPELL_POWER.get();
+        double spellPowerMultiplier = player.getStandingEyeHeight(holyPower);
+        float finalDamage = 7.0f * (float)(0.7 + 0.7 * Math.sqrt(spellPowerMultiplier));
+        if (!world.isClientSide()) {
+            for (int i = 0; i < 2; ++i) {
+                float angle = (float)i * (float)Math.PI;
+                double sx = player.getX() + (double)(Mth.randomBetween((float)angle) * 6.0f);
+                double sy = player.getY();
+                double sz = player.getZ() + (double)(Mth.outFromOrigin((float)angle) * 6.0f);
+                ExtendedSandstormEntity sandstorm = new ExtendedSandstormEntity(world, sx, sy, sz, 200, angle, (LivingEntity)player);
+                sandstorm.setCustomDamage(finalDamage);
+                world.addFreshEntity((Entity)sandstorm);
+            }
+        }
+    }
+
+    private void spawnDesertSteleAtPosition(Vec3 position, Level world, LivingEntity caster) {
+        double holySpellPower = caster.getStandingEyeHeight((Attribute)AttributeRegistry.HOLY_SPELL_POWER.get());
+        float scaledDamage = (float)(20.0 * (1.0 + 0.5 * Math.sqrt(holySpellPower)));
+        Ancient_Desert_Stele_Entity desertStele = new Ancient_Desert_Stele_Entity(world, position.z, position.multiply, position.reverse, caster.getYRot(), 10, scaledDamage, caster);
+        desertStele.setDamage(scaledDamage);
+        desertStele.setCaster(caster);
+        world.addFreshEntity((Entity)desertStele);
+    }
+
+    private void spawnDesertStele(Player player, Level world) {
+        double range = 18.0;
+        List entities = world.getNearbyEntities(LivingEntity.class, player.getBoundingBox().inflate(range));
+        entities.sort(Comparator.comparingDouble(e -> e.getY((Entity)player)));
+        int targetLimit = 10;
+        int targetsProcessed = 0;
+        for (LivingEntity entity : entities) {
+            if (entity == player) continue;
+            this.spawnDesertSteleAbove(entity, world, (LivingEntity)player);
+            if (++targetsProcessed < targetLimit) continue;
+            break;
+        }
+    }
+
+    private void spawnDesertSteleAbove(LivingEntity target, Level world, LivingEntity caster) {
+        Vec3 targetPos = target.position().y(0.0, (double)target.getEyeHeight() + 3.0, 0.0);
+        this.spawnDesertSteleAtPosition(targetPos, world, caster);
+    }
+
+    public void resolvePage(ItemStack stack, Level world, List<Component> tooltip, TooltipFlag flag) {
+        ABILITY.appendHoverText(stack, world, tooltip, flag, 3);
+        super.resolvePage(stack, world, tooltip, flag);
+    }
+
+    public void getTransformType(ItemDisplayContext type) {
+        transformType = type;
+    }
+
+    @Override
+    @OnlyIn(value=Dist.CLIENT)
+    protected BlockEntityWithoutLevelRenderer getRenderer() {
+        return new ScourgeOfTheSandsLevelThreeRenderer();
+    }
+
+    static {
+        ABILITY = new ScourgeOfTheSandsAbility();
+    }
+}
+

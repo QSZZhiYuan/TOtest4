@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " AA",
+    " BA",
+    "C  "
+  ],
+  "key": {
+    "A": {
+      "item": "traveloptics:hullbreaker_steel"
+    },
+    "B": {
+      "item": "cataclysm:coral_bardiche"
+    },
+    "C": {
+      "item": "irons_spellbooks:weapon_parts"
+    }
+  },
+  "result": {
+    "item": "traveloptics:trident_of_the_eternal_maelstrom",
+    "count": 1
+  },
+  "show_notification": true
+}

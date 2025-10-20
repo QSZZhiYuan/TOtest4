@@ -1,0 +1,6 @@
+{
+  "parent": "traveloptics:displaysettings/stellothorn_display",
+  "textures": {
+    "layer0": "traveloptics:item/stellothorn"
+  }
+}

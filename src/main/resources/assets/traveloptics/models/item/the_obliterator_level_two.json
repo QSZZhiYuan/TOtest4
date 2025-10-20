@@ -1,0 +1,6 @@
+{
+  "parent": "traveloptics:displaysettings/the_obliterator_display",
+  "textures": {
+    "layer0": "traveloptics:item/the_obliterator"
+  }
+}

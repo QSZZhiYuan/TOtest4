@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cataclysm:ignitium_ingot"
+  },
+  "base": {
+    "item": "traveloptics:flames_of_eldritch"
+  },
+  "result": {
+    "item": "traveloptics:flames_of_eldritch_level_one"
+  },
+  "template": {
+    "item": "traveloptics:flame_tempered_handguard"
+  }
+}

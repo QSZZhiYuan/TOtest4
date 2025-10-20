@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "cataclysm:entities/the_leviathan"
+    }
+  ],
+  "key": "traveloptics:entities/leviathan_additions_new"
+}

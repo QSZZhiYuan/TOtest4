@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:abyssal_tidecaller"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.abyssal_tidecaller.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.abyssal_tidecaller.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_tidecaller": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:abyssal_tidecaller"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_tidecaller"]],
+  "rewards": {
+    "experience": 75
+  }
+}

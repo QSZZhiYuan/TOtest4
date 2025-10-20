@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "traveloptics:void_cathedral",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1245301482,
+    "spacing": 90,
+    "separation": 78,
+    "type": "minecraft:random_spread"
+  }
+}

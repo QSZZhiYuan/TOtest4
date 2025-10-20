@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:pyro_spellweave_ingot"
+  },
+  "base": {
+    "item": "traveloptics:infernal_devastator_level_two"
+  },
+  "result": {
+    "item": "traveloptics:infernal_devastator_level_three"
+  },
+  "template": {
+    "item": "cataclysm:lava_power_cell"
+  }
+}

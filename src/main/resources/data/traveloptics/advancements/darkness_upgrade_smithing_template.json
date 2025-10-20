@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:darkness_upgrade_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.darkness_template.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.darkness_template.description"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "frame": "task"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_template": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:darkness_upgrade_smithing_template"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_template"]],
+  "rewards": {
+    "experience": 50
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:scourge_of_the_sands_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.scourge_of_the_sands_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.scourge_of_the_sands_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:scourge_of_the_sands",
+  "criteria": {
+    "max_scourge": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:scourge_of_the_sands_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_scourge"]],
+  "rewards": {
+    "experience": 200
+  }
+}

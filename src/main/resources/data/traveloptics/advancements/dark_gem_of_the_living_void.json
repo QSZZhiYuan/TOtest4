@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:dark_gem_of_the_living_void"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.dark_gem.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.dark_gem.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:darkness_upgrade_smithing_template",
+  "criteria": {
+    "get_dark_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:dark_gem_of_the_living_void"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_dark_gem"]],
+  "rewards": {
+    "experience": 75
+  }
+}

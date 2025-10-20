@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "A A",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "cataclysm:ancient_metal_nugget"
+    },
+    "B": {
+      "item": "traveloptics:desert_jewel_fragment"
+    }
+  },
+  "result": {
+    "item": "cataclysm:necklace_of_the_desert"
+  },
+  "show_notification": true
+}

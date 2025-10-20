@@ -1,0 +1,6 @@
+{
+  "parent": "traveloptics:displaysettings/infernal_devastator_display",
+  "textures": {
+    "layer0": "traveloptics:item/infernal_devastator"
+  }
+}

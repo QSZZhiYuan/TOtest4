@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{author:\"GameTechBC\",filtered_title:\"Journal #2\",pages:['{\"text\":\"The journals say he was looking for someone. Someone he lost. Someone who meant everything. And to find her, he walked a path no one else dared.\\\\n\\\\n\\\\\"Breaking the barrier without hurting the creature in it\\'s center wasn\\'t so easy.\\\\\"\"}','{\"text\":\"That line stuck with me. He did it without violence. Without killing. That alone is something worth remembering.\\\\n\\\\nBut grief... Grief often blinds us.\"}','{\"text\":\"There were things he didn\\'t account for. Fundamental truths buried deep beneath the laws of this dimension. Things I won\\'t write down here. If that knowledge ever ender up in the wrong hands, none of us would be safe.\\\\n\\\\n-- Definitely not because I\\'m lazy.\"}','{\"text\":\"I\\'m not a mage. Not really. I just make some spells staying in the void here as my hobby. But I know enough to say this: what he did was near impossible.\\\\n\\\\nAnd he did it anyway. \"}','{\"text\":\"So, we built this place around him. A structure to keep his form safe. To wait - just in case someone more capable than me comes along. Someone who might be able to pull him back.\"}'],resolved:1b,title:\"Journal #2\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

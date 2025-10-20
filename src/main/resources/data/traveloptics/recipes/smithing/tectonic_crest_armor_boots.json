@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:tectonic_ingot"
+  },
+  "base": {
+    "item": "traveloptics:primordial_crest_armor_boots"
+  },
+  "result": {
+    "item": "traveloptics:tectonic_crest_armor_boots"
+  },
+  "template": {
+    "item": "traveloptics:tectonic_upgrade_smithing_template"
+  }
+}

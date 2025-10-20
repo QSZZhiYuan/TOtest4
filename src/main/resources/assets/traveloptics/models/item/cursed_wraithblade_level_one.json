@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "traveloptics:item/weapon/cursed_wraithblade_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "traveloptics:item/weapon/cursed_wraithblade_gui"
+    }
+  }
+}

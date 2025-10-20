@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCA",
+    "CBA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "traveloptics:resonant_scrap"
+    },
+    "B": {
+      "item": "irons_spellbooks:ender_rune"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "traveloptics:ender_echo",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -1,0 +1,51 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:tectonic_crest_armor_chestplate"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.full_set_tectonic_crest.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.full_set_tectonic_crest.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "tectonic_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:tectonic_crest_armor_helmet"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:tectonic_crest_armor_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:tectonic_crest_armor_leggings"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:tectonic_crest_armor_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["tectonic_armor"]],
+  "rewards": {
+    "experience": 100
+  }
+}

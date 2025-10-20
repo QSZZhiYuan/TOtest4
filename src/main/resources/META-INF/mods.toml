@@ -1,0 +1,55 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+issueTrackerURL="https://discord.gg/BKyvxfdykN"
+
+[[mods]]
+modId="traveloptics"
+version="5.5.0-1.20.1-NoAlexsCaves"
+displayName="T.O Magic 'n Extras (No Alex's Caves Required)"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/to-tweaks-irons-spells"
+credits="Many writing ideas are from KumaV1ne; Base Better Combat compatibility is made by Kayn; Base for Abyssal blast, Death laser, Solar flare is provided by MrSlyFoxJr; Thanks Han_tokei, Saga, Mr.Sup, Lepolite, Haereu for your translations; Thanks Min for debugging stuff when I get lost; Thanks Amadhe for providing Talent and Call Forth The Dead King icon; Thanks Miguel Forge for reworking and contributing some arts for the mod; Thanks Kayn & ION for Void Cathedral and Echo Shrine builds."
+logoFile="icon.png"
+authors="GameTechBC"
+description='''
+T.O Magic 'n Extras contains custom & immersive never before seen spells, weapons, armors, unique curios, spellbooks, staves, skilltree gems... You name it, you have it!!
+  '''
+displayTest="MATCH_VERSION"
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.traveloptics]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.traveloptics]]
+modId="irons_spellbooks"
+mandatory=true
+versionRange="[1.20.1-3.4.0.7,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.traveloptics]]
+modId="cataclysm"
+mandatory=true
+versionRange="[2.57,)"
+ordering="NONE"
+side="BOTH"
+# REMOVED - NoAlexsCaves version
+# [[dependencies.traveloptics]]
+# modId="alexscaves"
+# mandatory=false
+# versionRange="[2.0.0,)"
+# ordering="NONE"
+# side="BOTH"
+[[dependencies.traveloptics]]
+modId="attributeslib"
+mandatory=true
+versionRange="[1.3.7,)"
+ordering="NONE"
+side="BOTH"
+
+

@@ -1,0 +1,155 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+}
+
+version = '5.5.0-1.20.1-NoAlexsCaves'
+group = 'com.gametechbc.traveloptics'
+
+base {
+    archivesName = 'traveloptics'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'parchment', version: '2023.09.03-1.20.1'
+    
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                traveloptics {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                traveloptics {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    // 优先使用 CurseMaven 仓库（适配所有 CurseForge 依赖）
+    maven { 
+        name = 'CurseMaven' 
+        url = 'https://cursemaven.com' 
+    }
+
+    // 部分模组可能需要的专属仓库（保险起见添加）
+    maven { url "https://maven.minecraftforge.net/" } // Forge仓库
+    maven { url "https://maven.parchmentmc.org/" }
+    maven { name = 'Curios'; url = 'https://maven.theillusivec4.top/' } // Curios API 专属
+    maven { name = 'GeckoLib'; url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' } // GeckoLib 专属
+
+    // 阿里云镜像（加速国内/CI 环境下载）
+    maven { name = 'Aliyun Public'; url = 'https://maven.aliyun.com/repository/public' }
+    maven { name = 'Aliyun Central'; url = 'https://maven.aliyun.com/repository/central' }
+
+    mavenCentral()
+}
+// 依赖解析策略
+configurations.all {
+    resolutionStrategy {
+        force(
+            // 与 dependencies 中的版本完全同步，锁定依赖版本
+            "curse.maven:playeranimator-658587:4587214",
+            "curse.maven:irons-spells-n-spellbooks-855414:6970299",
+            "curse.maven:apothic-attributes-898963:5634071",
+            "curse.maven:lendercataclysm-551586:6906993",
+            "curse.maven:curios-309927:6418456",
+            "curse.maven:geckolib-388172:7025129",
+            "curse.maven:caelus-308989:5281700"
+        )
+    }
+}
+// 依赖配置
+dependencies {
+    // 基础 Forge 依赖（1.20.1 版本，与你的项目环境匹配）
+    minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+
+    // 整合所有提供的 Curse Maven Snippet，均包含 fg.deobf() 反混淆处理
+    implementation fg.deobf("curse.maven:playeranimator-658587:4587214") // Player Animation Library
+    implementation fg.deobf("curse.maven:irons-spells-n-spellbooks-855414:6970299") // Irons Spells n Spellbooks
+    implementation fg.deobf("curse.maven:apothic-attributes-898963:5634071") // Apothic Attributes
+    implementation fg.deobf("curse.maven:lendercataclysm-551586:6906993") // Lender's Cataclysm
+    implementation fg.deobf("curse.maven:curios-309927:6418456") // Curios API
+    implementation fg.deobf("curse.maven:geckolib-388172:7025129") // GeckoLib
+    implementation fg.deobf("curse.maven:caelus-308989:5281700") // Caelus API
+}
+tasks.named('processResources', ProcessResources).configure {
+    var replaceProperties = [
+            minecraft_version: '1.20.1',
+            minecraft_version_range: '[1.20.1,1.21)',
+            forge_version: '47.3.0',
+            forge_version_range: '[47,)',
+            loader_version_range: '[47,)',
+            mod_id: 'traveloptics',
+            mod_name: 'Travel Optics',
+            mod_license: 'All Rights Reserved',
+            mod_version: project.version,
+            mod_authors: 'GametechBC',
+            mod_description: 'Travel Optics - No Alex\'s Caves Version'
+    ]
+    inputs.properties replaceProperties
+
+    filesMatching(['META-INF/mods.toml']) {
+        expand replaceProperties + [project: project]
+    }
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+                'Specification-Title'     : 'traveloptics',
+                'Specification-Vendor'    : 'GametechBC',
+                'Specification-Version'   : '1',
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.jar.archiveVersion,
+                'Implementation-Vendor'   : 'GametechBC',
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+    finalizedBy 'reobfJar'
+}
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            artifact jar
+        }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/mcmodsrepo"
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    // 允许依赖刷新，避免缓存问题
+    options.fork = true
+}
+
+// 添加依赖刷新任务（可选，手动触发时使用）
+task refreshDependencies(type: Delete) {
+    delete project.buildDir
+    delete "${project.rootDir}/.gradle/caches"
+    doLast {
+        println "已清理构建缓存，下次构建将重新下载依赖"
+    }
+}

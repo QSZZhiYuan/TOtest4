@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:flames_of_eldritch"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.flames_of_eldritch.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.flames_of_eldritch.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_eldritch_weapon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:flames_of_eldritch"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_eldritch_weapon"]],
+  "rewards": {
+    "experience": 75
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "traveloptics:deepling_mage_armor_boots",
+    "traveloptics:forlorn_harbinger_boots",
+    "traveloptics:primordial_crest_armor_boots",
+    "traveloptics:tectonic_crest_armor_boots",
+    "traveloptics:abyssal_hide_armor_boots",
+    "traveloptics:cursed_wraithguard_boots",
+    "traveloptics:mechanized_exoskeleton_boots"
+  ]
+}

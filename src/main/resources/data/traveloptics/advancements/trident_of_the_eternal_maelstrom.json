@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:trident_of_the_eternal_maelstrom"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.trident_of_the_eternal_maelstrom.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.trident_of_the_eternal_maelstrom.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_eternal_trident": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:trident_of_the_eternal_maelstrom"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_eternal_trident"]],
+  "rewards": {
+    "experience": 100
+  }
+}

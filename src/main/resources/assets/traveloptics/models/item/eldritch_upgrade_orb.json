@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "traveloptics:item/upgrade_orb_eldritch",
+    "layer1": "traveloptics:item/eldritch_orb_swirl",
+    "layer2": "traveloptics:item/eldritch_orb_corruption"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:dark_gem_of_the_living_void"
+  },
+  "base": {
+    "item": "irons_spellbooks:netherite_mage_chestplate"
+  },
+  "result": {
+    "item": "traveloptics:forlorn_harbinger_robe"
+  },
+  "template": {
+    "item": "traveloptics:darkness_upgrade_smithing_template"
+  }
+}

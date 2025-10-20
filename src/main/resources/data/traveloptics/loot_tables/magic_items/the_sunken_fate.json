@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{filtered_title: \"The Sunken Fate\", pages: [\"{\\\"text\\\":\\\"Day??\\\"}\", \"{\\\"text\\\":\\\"The water calls to me. It bends to my will, yet each spell takes a piece of me I cannot reclain. My skin is changing, pale and slick like the creatures of the abyss. My hand, once stready now tremble with an unfamiliar strenght that doesn't feel my own.\\\"}\", \"{\\\"text\\\":\\\"I've seen them before -- the Deeplings, lurking in the sunken ruins, their forms cloaked in the deep hues of the abyss. They move with purpose, as though driven by something unseen. \\\\n\\\\nSomeone unseen!\\\"}\", \"{\\\"text\\\":\\\"Who are they, or what is it, that commands them? I cannot say. But I know they use the same magic that now courses through my veins. The way they channel the water, bend it to their will -- it is too familiar. Too much like my own.\\\\n\\\\nWere they like me once? Human?\\\"}\", \"{\\\"text\\\":\\\"I try to stop!\\\\nI try to resist!\\\\n\\\\nBut the water -- my water -- is part of me now.\\\\n\\\\nWithout it, I am nothing.\\\\n\\\\nWith it, I am doomed.\\\"}\", \"{\\\"text\\\":\\\"I don't know how much longer I can write. But if you find this... know that the price of power it steep.\\\\n.\\\\n.\\\\n.\\\\n.\\\\n\\\\nThe Abyss always takes what it is owed. \\\\n\\\\n         - Aquamancer\\\"}\"], title: \"The Sunken Fate\", author: \"Aquamancer\", resolved: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

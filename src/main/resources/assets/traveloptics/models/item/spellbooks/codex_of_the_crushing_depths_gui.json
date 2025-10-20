@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "traveloptics:item/codex_of_the_crushing_depths"
+  }
+}

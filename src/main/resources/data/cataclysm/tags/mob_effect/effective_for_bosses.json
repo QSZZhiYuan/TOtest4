@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "traveloptics:aerial_collapse",
+    "traveloptics:nullflare_ice",
+    "traveloptics:nullflare_fire",
+    "traveloptics:wet",
+    "traveloptics:corroded",
+    "traveloptics:astral_path_reveal"
+  ]
+}

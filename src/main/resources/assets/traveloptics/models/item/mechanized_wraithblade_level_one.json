@@ -1,0 +1,6 @@
+{
+  "parent": "traveloptics:displaysettings/mechanized_wraithblade_display",
+  "textures": {
+    "layer0": "traveloptics:item/mechanized_wraithblade_level_one"
+  }
+}

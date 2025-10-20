@@ -1,0 +1,7 @@
+{
+  "__comment": "By default if a curio is imbued that is not spellbook, the imbued spell will not display when worn. Adding that curio to this tag makes so the imbued spell can be accessed",
+  "replace": false,
+  "values": [
+    "#traveloptics:echo_curio"
+  ]
+}

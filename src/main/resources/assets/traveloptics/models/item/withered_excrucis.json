@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "traveloptics:item/withered_excrucis",
+    "layer1": "traveloptics:item/withered_excrucis_glow_layer",
+    "layer2": "traveloptics:item/withered_excrucis_smoke_layer"
+  }
+}

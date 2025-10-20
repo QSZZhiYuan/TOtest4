@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:verdant_spellweave_ingot"
+  },
+  "base": {
+    "item": "traveloptics:thorns_of_oblivion"
+  },
+  "result": {
+    "item": "traveloptics:thorns_of_oblivion_level_one"
+  },
+  "template": {
+    "item": "traveloptics:kyrexi_claws"
+  }
+}

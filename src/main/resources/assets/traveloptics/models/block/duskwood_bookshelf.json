@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "traveloptics:block/duskwood_planks",
+    "up": "traveloptics:block/duskwood_planks",
+    "north": "traveloptics:block/duskwood_bookshelf_side",
+    "east": "traveloptics:block/duskwood_bookshelf_side",
+    "south": "traveloptics:block/duskwood_bookshelf_side",
+    "west": "traveloptics:block/duskwood_bookshelf_side",
+    "particle": "traveloptics:block/duskwood_planks"
+  },
+  "render_type": "solid"
+}

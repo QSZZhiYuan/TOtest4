@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{filtered_title: \"The Barrier\", pages: [\"{\\\"text\\\":\\\"The problem was... the End was sealed. I could feel her presence somewhere far beyond the main island. But to reach her, I had to cross something most people didn't even know existed.\\\\n\\\\nA Barrier...\\\"}\", \"{\\\"text\\\":\\\"IT wasn't made by the Ender Dragon, but it's presence kept it in place.\\\\n\\\\nOther's might have for the obvious answer - kill the dragon. Force the way open.\\\\n\\\\n\\\\nBut not me...\\\"}\", \"{\\\"text\\\":\\\"I don't hurt things that don't hurt me. The dragon had never attacked me.\\\\nIt was just there. Guarding its home...\\\\n\\\\nAnd maybe I understood that a little too well.\\\"}\"], title: \"The Barrier\", author: \"????\", resolved: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:the_obliterator_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.the_obliterator_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.the_obliterator_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:the_obliterator",
+  "criteria": {
+    "max_obliterator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:the_obliterator_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_obliterator"]],
+  "rewards": {
+    "experience": 600
+  }
+}

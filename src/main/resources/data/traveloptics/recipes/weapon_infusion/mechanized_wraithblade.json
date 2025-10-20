@@ -1,0 +1,12 @@
+{
+  "type": "cataclysm:weapon_fusion",
+  "base": {
+    "item": "cataclysm:laser_gatling"
+  },
+  "addition": {
+    "item": "traveloptics:cursed_wraithblade"
+  },
+  "result": {
+    "item": "traveloptics:mechanized_wraithblade"
+  }
+}

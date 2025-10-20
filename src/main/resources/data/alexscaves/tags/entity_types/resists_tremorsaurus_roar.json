@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "__comment": "all mobs that are not shaken by a tremorsaurus roar.",
+  "values": [
+    "traveloptics:enraged_dead_king",
+    "traveloptics:the_nightwarden"
+  ]
+}

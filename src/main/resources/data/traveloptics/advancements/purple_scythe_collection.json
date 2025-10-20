@@ -1,0 +1,46 @@
+{
+  "display": {
+    "hidden": true,
+    "icon": {
+      "item": "traveloptics:stellothorn"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.purple_scythe_collection.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.purple_scythe_collection.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "purple_scythes": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:abyssal_tidecaller"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:voidstrike_reaper"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:stellothorn"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["purple_scythes"]],
+  "rewards": {
+    "experience": 500
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{filtered_title: \"Regret\", pages: [\"{\\\"text\\\":\\\"No one ever showed me her body. No one ever told me she was gone. I know she is out there, somewhere. And if I have to tear the End apart to find her, I will...\\\"}\"], title: \"Regret\", author: \"Unknown Mage\", resolved: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

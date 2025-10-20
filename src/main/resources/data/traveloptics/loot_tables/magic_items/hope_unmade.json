@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{filtered_title: \"Hope Unmade\", pages: [\"{\\\"text\\\":\\\"And eventually I did it.\\\\n\\\\nThe barrier shattered. And just for a second - I let myself believe I have won.\\\"}\", \"{\\\"text\\\":\\\"\\\\n\\\\n\\\\n\\\\n\\\\n\\\\nBut I was wrong...\\\"}\", \"{\\\"text\\\":\\\"I think I cannot continue this journal anym......\\\"}\"], title: \"Hope Unmade\", author: \"??????\", resolved: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

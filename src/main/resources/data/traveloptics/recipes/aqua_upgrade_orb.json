@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "traveloptics:aqua_rune"
+    },
+    "B": {
+      "item": "irons_spellbooks:upgrade_orb"
+    }
+  },
+  "result": {
+    "item": "traveloptics:aqua_upgrade_orb",
+    "count": 1
+  },
+  "show_notification": true
+}

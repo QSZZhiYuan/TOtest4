@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "alshanex_familiars:sound_magic",
+      "required": false
+    }
+  ]
+}

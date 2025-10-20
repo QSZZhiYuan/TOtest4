@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:cradle_of_will"
+  },
+  "base": {
+    "item": "traveloptics:stellothorn"
+  },
+  "result": {
+    "item": "traveloptics:stellothorn_level_one"
+  },
+  "template": {
+    "item": "traveloptics:withered_excrucis"
+  }
+}

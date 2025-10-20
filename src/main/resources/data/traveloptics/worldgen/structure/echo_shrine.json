@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "traveloptics:echo_shrine/start_pool",
+  "size": 1,
+  "max_distance_from_center": 10,
+  "biomes": "#traveloptics:has_structure/echo_shrine",
+  "step": "underground_decoration",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": -50
+    },
+    "max_inclusive": {
+      "absolute": 10
+    }
+  },
+  "terrain_adaptation": "beard_thin",
+  "use_expansion_hack": false,
+  "spawn_overrides": {
+
+  }
+}

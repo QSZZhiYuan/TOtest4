@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:scourge_of_the_sands"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.scourge_of_the_sands.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.scourge_of_the_sands.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_scourge": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:scourge_of_the_sands"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_scourge"]],
+  "rewards": {
+    "experience": 75
+  }
+}

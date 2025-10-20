@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "traveloptics:deepling_mage_armor_helmet",
+    "traveloptics:forlorn_harbinger_hood",
+    "traveloptics:primordial_crest_armor_helmet",
+    "traveloptics:tectonic_crest_armor_helmet",
+    "traveloptics:abyssal_hide_armor_hat",
+    "traveloptics:cursed_wraithguard_crown",
+    "traveloptics:mechanized_exoskeleton_helmet"
+  ]
+}

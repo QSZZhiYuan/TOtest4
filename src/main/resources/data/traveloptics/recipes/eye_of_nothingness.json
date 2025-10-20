@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AFA",
+    "BGB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "cataclysm:obsidian_bricks"
+    },
+    "B": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "F": {
+      "item": "irons_spellbooks:ancient_knowledge_fragment"
+    },
+    "G": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "traveloptics:eye_of_nothingness",
+    "count": 1
+  },
+  "show_notification": false
+}

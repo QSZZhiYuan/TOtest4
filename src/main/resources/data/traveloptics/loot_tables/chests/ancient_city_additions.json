@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "traveloptics:amulet_of_spectral_shift",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "traveloptics:nightstalkers_band",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 12,
+          "name": "traveloptics:eldritch_echo",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "traveloptics:magic_items/regret",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "traveloptics:magic_items/reality",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 112
+        }
+      ]
+    }
+  ]
+}

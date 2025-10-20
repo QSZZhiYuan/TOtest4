@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BAB",
+    "BAB",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "B": {
+      "item": "cataclysm:blessed_amethyst_crab_meat"
+    }
+  },
+  "result": {
+    "item": "traveloptics:sanctified_spell_slot_upgrade"
+  },
+  "show_notification": true
+}

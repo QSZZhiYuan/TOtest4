@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:voidstrike_reaper"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.voidstrike_reaper.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.voidstrike_reaper.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_voidstrike": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:voidstrike_reaper"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_voidstrike"]],
+  "rewards": {
+    "experience": 125
+  }
+}

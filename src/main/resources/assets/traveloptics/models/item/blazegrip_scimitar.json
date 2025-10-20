@@ -1,0 +1,7 @@
+{
+  "parent": "traveloptics:custom/blazegrip_scimitar",
+  "textures": {
+    "0": "traveloptics:block/blazegrip_scimitar",
+    "particle": "traveloptics:item/blazegrip_scimitar_icon"
+  }
+}

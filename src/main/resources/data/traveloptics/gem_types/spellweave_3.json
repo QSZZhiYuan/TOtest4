@@ -1,0 +1,186 @@
+{
+  "bonuses": [
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "attributeslib:prot_pierce",
+            "id": "e0a44941-2166-49de-99f7-170d7189f012",
+            "name": "Spellweave",
+            "amount": 0.025,
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "divisor": 30.0,
+              "type": "skilltree:missing_health_percentage"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "shield"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "attributeslib:crit_chance",
+            "id": "27bfe147-28fa-4d63-86b2-72c502c3c921",
+            "name": "Spellweave",
+            "amount": 0.04,
+            "operation": 1,
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "target_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "helmet"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "forge:step_height_addition",
+            "id": "44c7ea2b-bf3c-40c6-9bdc-43fd2f565c72",
+            "name": "Spellweave",
+            "amount": 0.06,
+            "operation": 1,
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "item_condition": {
+                "id": "irons_spellbooks:shadowwalker_boots",
+                "type": "skilltree:item_id"
+              },
+              "type": "skilltree:has_item_equipped"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "target_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "boots"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:crafted_item_bonus",
+            "item_condition": {
+              "equipment_type": "melee_weapon",
+              "type": "skilltree:equipment_type"
+            },
+            "item_bonus": {
+              "multiplier": 0.06,
+              "type": "skilltree:potion_duration"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:tag",
+        "tag_id": "forge:curios/jewelry"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "irons_spellbooks:spell_power",
+            "id": "914bc68d-3f34-44f1-becc-f26cbf3a5450",
+            "name": "Spellweave",
+            "amount": 0.06,
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "chestplate"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "minecraft:generic.attack_damage",
+            "id": "a229e17e-0eb7-4faa-8f51-d66a311d0198",
+            "name": "Spellweave",
+            "amount": 0.06,
+            "operation": 1,
+            "damage_condition": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "attribute": "irons_spellbooks:max_mana",
+              "max": 100.0,
+              "type": "skilltree:attribute_value"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "target_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "weapon"
+      }
+    }
+  ],
+  "id": "skilltree:spellweave_3"
+}

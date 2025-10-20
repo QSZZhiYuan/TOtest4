@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:abyssal_tidecaller_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.abyssal_tidecaller_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.abyssal_tidecaller_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:abyssal_tidecaller",
+  "criteria": {
+    "max_tidecaller": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:abyssal_tidecaller_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_tidecaller"]],
+  "rewards": {
+    "experience": 200
+  }
+}

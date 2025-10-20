@@ -1,0 +1,5 @@
+{
+  "type": "traveloptics:universal_loot",
+  "conditions": [],
+  "loot_table": "traveloptics:chests/random_imbue_curio_loot"
+}

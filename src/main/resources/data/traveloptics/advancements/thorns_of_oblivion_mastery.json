@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:thorns_of_oblivion_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.thorns_of_oblivion_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.thorns_of_oblivion_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:thorns_of_oblivion",
+  "criteria": {
+    "max_thorns": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:thorns_of_oblivion_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_thorns"]],
+  "rewards": {
+    "experience": 250
+  }
+}

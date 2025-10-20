@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "cataclysm:entities/ignited_revenant"
+    }
+  ],
+  "key": "traveloptics:entities/ignited_revenant_additions_new"
+}

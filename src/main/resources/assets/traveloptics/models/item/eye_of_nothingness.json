@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "traveloptics:item/structure_eyes/eye_of_nothingness"
+  }
+}

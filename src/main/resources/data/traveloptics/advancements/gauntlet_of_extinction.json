@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:gauntlet_of_extinction"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.gauntlet_of_extinction.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.gauntlet_of_extinction.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_extinction_gauntlet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:gauntlet_of_extinction"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_extinction_gauntlet"]],
+  "rewards": {
+    "experience": 100
+  }
+}

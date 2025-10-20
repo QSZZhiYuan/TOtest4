@@ -1,0 +1,24 @@
+{
+  "__comment": "Entities in this tag will get blacklisted from approach-sense of Astral Sense",
+  "replace": false,
+  "values": [
+    "minecraft:cow",
+    "minecraft:chicken",
+    "minecraft:sheep",
+    "minecraft:horse",
+    "minecraft:villager",
+    "minecraft:bat",
+    "minecraft:turtle",
+    "minecraft:camel",
+    "minecraft:pig",
+    "minecraft:turtle",
+    "minecraft:donkey",
+    "minecraft:parrot",
+    "minecraft:turtle",
+    "minecraft:squid",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:turtle"
+  ]
+}

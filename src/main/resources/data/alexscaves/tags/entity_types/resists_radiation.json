@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "__comment": "all mobs that are immune to the effects of the irradiated effect.",
+  "values": [
+    "traveloptics:enraged_dead_king",
+    "traveloptics:the_nightwarden"
+  ]
+}

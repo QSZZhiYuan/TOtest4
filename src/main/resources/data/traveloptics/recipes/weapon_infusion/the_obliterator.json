@@ -1,0 +1,12 @@
+{
+  "type": "cataclysm:weapon_fusion",
+  "base": {
+    "item": "traveloptics:abyssal_tidecaller"
+  },
+  "addition": {
+    "item": "cataclysm:the_annihilator"
+  },
+  "result": {
+    "item": "traveloptics:the_obliterator"
+  }
+}

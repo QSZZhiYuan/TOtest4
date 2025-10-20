@@ -1,0 +1,7 @@
+{
+  "parent": "traveloptics:custom/ethereal_edge",
+  "textures": {
+    "0": "traveloptics:block/ethereal_edge",
+    "particle": "traveloptics:item/ethereal_edge_icon"
+  }
+}

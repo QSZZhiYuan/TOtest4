@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:harbingers_wrath"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.harbingers_wrath.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.harbingers_wrath.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "get_harbinger_weapon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:harbingers_wrath"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_harbinger_weapon"]],
+  "rewards": {
+    "experience": 100
+  }
+}

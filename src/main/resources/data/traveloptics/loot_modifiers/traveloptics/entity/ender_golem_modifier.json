@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "cataclysm:entities/ender_golem"
+    }
+  ],
+  "key": "traveloptics:entities/ender_golem_additions_new"
+}

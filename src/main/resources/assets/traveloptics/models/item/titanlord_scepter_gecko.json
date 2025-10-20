@@ -1,0 +1,6 @@
+{
+  "parent": "traveloptics:displaysettings/titanlords_scepter_gecko_display",
+  "textures": {
+    "layer0": "traveloptics:item/titanlord_scepter_icon"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A A",
+    " C ",
+    "B A"
+  ],
+  "key": {
+    "A": {
+      "item": "cataclysm:ancient_metal_ingot"
+    },
+    "B": {
+      "item": "cataclysm:ancient_metal_nugget"
+    },
+    "C": {
+      "item": "irons_spellbooks:weapon_parts"
+    }
+  },
+  "result": {
+    "item": "traveloptics:ancient_metal_weapon_parts",
+    "count": 1
+  },
+  "show_notification": true
+}

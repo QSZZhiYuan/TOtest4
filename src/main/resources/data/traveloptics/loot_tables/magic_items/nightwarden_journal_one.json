@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{author:\"GameTechBC\",filtered_title:\"Journal #1\",pages:['{\"text\":\"I found him in the void.\\\\nAt first, I thought it was a statue - suspended in place, unmoving, almost lost to time. But the closer I got, the more certain I became: this wasn\\'t a statue. It was a body locked in stasis, frozen between worlds...but still alive.\\\\n\\\\nSomehow...\"}','{\"text\":\"Not alive in the way most would recognize. I don\\'t think he can speak. Maybe not even move. But I felt his presence. Like he was watching. Listening. Trapped just behind the veil of this world. There were journals near him, when I arrived. A few had already begun drifting into the void.\"}','{\"text\":\"But some remained. Enough to piece together the truth.\\\\n\\\\n\\\\n\\\\n\\\\n---->\"}','{\"text\":\"HE had broken the barrier.\\\\nYou probably know the one I mean. It wasn\\'t a wall built by hands. IT was part of the dimension itself. Most never saw it. Fewer still understand what it was. And...\\\\n\\\\nAnyone who touches it unprepared would vanish in an instant.\"}','{\"text\":\"That\\'s what I believe happened to him. He didn\\'t die, exactly.\\\\nBut his body, his soul... caught somewhere between \\'here and not.\\'\"}'],resolved:1b,title:\"Journal #1\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

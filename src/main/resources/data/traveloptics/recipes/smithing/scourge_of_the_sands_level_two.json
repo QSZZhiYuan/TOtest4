@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cataclysm:ancient_metal_ingot"
+  },
+  "base": {
+    "item": "traveloptics:scourge_of_the_sands_level_one"
+  },
+  "result": {
+    "item": "traveloptics:scourge_of_the_sands_level_two"
+  },
+  "template": {
+    "item": "traveloptics:desert_jewel_fragment"
+  }
+}

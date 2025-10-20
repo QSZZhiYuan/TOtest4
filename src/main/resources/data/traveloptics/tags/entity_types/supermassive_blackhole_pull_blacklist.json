@@ -1,0 +1,10 @@
+{
+  "__comment": "Entities in this tag will not be pulled by the supermassive blackhole from supernova only, base ISS blackhole will still pull",
+  "replace": false,
+  "values": [
+    "traveloptics:dragon_spirit",
+    "traveloptics:dragon_spirit_spell",
+    "traveloptics:stellar_trail_aoe",
+    "traveloptics:the_nightwarden"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:the_obliterator"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.the_obliterator.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.the_obliterator.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:abyssal_tidecaller",
+  "criteria": {
+    "get_obliterator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:the_obliterator"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_obliterator"]],
+  "rewards": {
+    "experience": 250
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "traveloptics:aqua_mage_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1248360482,
+    "spacing": 40,
+    "separation": 12,
+    "type": "minecraft:random_spread"
+  }
+}

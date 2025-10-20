@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "traveloptics:abyssal_spellweave_ingot"
+  },
+  "base": {
+    "item": "irons_spellbooks:netherite_mage_boots"
+  },
+  "result": {
+    "item": "traveloptics:abyssal_hide_armor_boots"
+  },
+  "template": {
+    "item": "traveloptics:abyssal_upgrade_smithing_template"
+  }
+}

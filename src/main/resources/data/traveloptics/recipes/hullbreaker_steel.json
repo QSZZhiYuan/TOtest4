@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "traveloptics:hullbreaker_scales"
+    },
+    "B": {
+      "item": "irons_spellbooks:arcane_ingot"
+    }
+  },
+  "result": {
+    "item": "traveloptics:hullbreaker_steel",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{filtered_title: \"Lost One\", pages: [\"{\\\"text\\\":\\\"She was taken. Lost to the End by something I couldn't name. No sign, no warning, no clue - just silence. Whatever it was, it left nothing behind but questions.\\\\n\\\\n\\\"}\"], title: \"Lost One\", author: \"???\", resolved: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{filtered_title: \"The Other Way\", pages: [\"{\\\"text\\\":\\\"The barrier was made from old, raw power - something that couldn't be broken by force alone. I needed to overthink it.\\\\n\\\\nSo I studied. I let go of everything else. Spent YEARS pushing past every limit anyone ever told me existed.\\\"}\", \"{\\\"text\\\":\\\"I was no longer \\\\\\\"just\\\\\\\" a mage. \\\\n\\\\nI am now a man ready to tear the stars apart just to reach her again.\\\"}\"], title: \"The Other Way\", author: \"?????\", resolved: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

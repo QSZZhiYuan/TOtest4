@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cataclysm:witherite_ingot"
+  },
+  "base": {
+    "item": "irons_spellbooks:netherite_mage_boots"
+  },
+  "result": {
+    "item": "traveloptics:mechanized_exoskeleton_boots"
+  },
+  "template": {
+    "item": "traveloptics:witherite_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " DA",
+    " B ",
+    "C  "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "B": {
+      "item": "traveloptics:withered_excrucis"
+    },
+    "C": {
+      "item": "traveloptics:ancient_metal_weapon_parts"
+    },
+    "D": {
+      "item": "traveloptics:pocket_black_hole"
+    }
+  },
+  "result": {
+    "item": "traveloptics:wand_of_final_light",
+    "count": 1
+  },
+  "show_notification": true
+}

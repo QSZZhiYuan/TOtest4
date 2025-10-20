@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "traveloptics:displaysettings/titanlords_scepter_display"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "traveloptics:displaysettings/titanlord_scepter_retro_gui"
+    }
+  }
+}

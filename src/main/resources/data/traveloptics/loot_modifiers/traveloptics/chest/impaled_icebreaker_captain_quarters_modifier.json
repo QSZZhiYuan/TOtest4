@@ -1,0 +1,10 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/captain_quarters"
+    }
+  ],
+  "key": "traveloptics:chests/impaled_icebreaker_captain_quarters"
+}

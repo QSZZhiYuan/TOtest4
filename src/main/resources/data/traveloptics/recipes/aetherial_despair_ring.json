@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AB ",
+    "BCB",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "cataclysm:cursium_ingot"
+    },
+    "B": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "C": {
+      "item": "cataclysm:ancient_metal_ingot"
+    }
+  },
+  "result": {
+    "item": "traveloptics:aetherial_despair_ring",
+    "count": 1
+  },
+  "show_notification": true
+}

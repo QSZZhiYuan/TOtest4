@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:stellothorn_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.stellothorn_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.stellothorn_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:stellothorn",
+  "criteria": {
+    "max_stellothorn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:stellothorn_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_stellothorn"]],
+  "rewards": {
+    "experience": 400
+  }
+}

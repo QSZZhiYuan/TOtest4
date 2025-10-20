@@ -1,0 +1,189 @@
+{
+  "bonuses": [
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:inflict_damage",
+            "chance": 0.15,
+            "damage": 4.0,
+            "event_listener": {
+              "damage_condition": {
+                "type": "skilltree:none"
+              },
+              "enemy_condition": {
+                "type": "skilltree:none"
+              },
+              "player_condition": {
+                "type": "skilltree:none"
+              },
+              "enemy_multiplier": {
+                "type": "skilltree:none"
+              },
+              "player_multiplier": {
+                "type": "skilltree:none"
+              },
+              "target": "enemy",
+              "type": "skilltree:block"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "shield"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "irons_spellbooks:summon_damage",
+            "id": "ee9c94d3-36b8-42a7-b5b5-6ffd1d197f75",
+            "name": "Moonshade",
+            "amount": 0.04,
+            "operation": 1,
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "helmet"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "irons_spellbooks:holy_magic_resist",
+            "id": "da2c5f6f-6619-46e4-8b16-2c5b9531ae55",
+            "name": "Moonshade",
+            "amount": 0.04,
+            "operation": 1,
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "boots"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "id": "19649d88-d3b5-4401-90e1-a82edbb01fbb",
+            "name": "Moonshade",
+            "amount": 0.02,
+            "operation": 1,
+            "player_multiplier": {
+              "item_condition": {
+                "type": "skilltree:none"
+              },
+              "type": "skilltree:gems_amount"
+            },
+            "player_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:tag",
+        "tag_id": "forge:curios/jewelry"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "attribute": "irons_spellbooks:max_mana",
+            "id": "22ca1e09-74c9-46bf-ae6a-552a22dc25d2",
+            "name": "Moonshade",
+            "amount": 40.0,
+            "operation": 0,
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "item_condition": {
+                "id": "irons_spellbooks:villager_spell_book",
+                "type": "skilltree:item_id"
+              },
+              "type": "skilltree:has_item_equipped"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "chestplate"
+      }
+    },
+    {
+      "bonus_provider": {
+        "type": "skilltree:simple",
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:mob_effect",
+            "chance": 0.15,
+            "effect": "irons_spellbooks:hastened",
+            "duration": 60,
+            "amplifier": 0,
+            "event_listener": {
+              "damage_condition": {
+                "type": "skilltree:none"
+              },
+              "enemy_condition": {
+                "type": "skilltree:none"
+              },
+              "player_condition": {
+                "type": "skilltree:none"
+              },
+              "enemy_multiplier": {
+                "type": "skilltree:none"
+              },
+              "player_multiplier": {
+                "type": "skilltree:none"
+              },
+              "type": "skilltree:on_kill"
+            }
+          }
+        }
+      },
+      "item_condition": {
+        "type": "skilltree:equipment_type",
+        "equipment_type": "weapon"
+      }
+    }
+  ],
+  "id": "skilltree:moonshade_3"
+}

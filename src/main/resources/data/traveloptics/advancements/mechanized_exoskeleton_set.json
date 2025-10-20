@@ -1,0 +1,51 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:mechanized_exoskeleton_chestplate"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.full_set_exoskeleton.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.full_set_exoskeleton.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:elytra_jetpack_component",
+  "criteria": {
+    "mechanized_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:mechanized_exoskeleton_helmet"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:mechanized_exoskeleton_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:mechanized_exoskeleton_leggings"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:mechanized_exoskeleton_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["mechanized_armor"]],
+  "rewards": {
+    "experience": 100
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "traveloptics:item/spellbooks/the_accused_codex_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "traveloptics:item/spellbooks/the_accused_codex_gui"
+    }
+  }
+}

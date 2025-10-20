@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "traveloptics:void_cathedral/start_pool",
+  "size": 2,
+  "max_distance_from_center": 50,
+  "biomes": "#traveloptics:has_structure/void_cathedral",
+  "step": "surface_structures",
+  "start_height": {
+    "absolute": 1
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "terrain_adaptation": "beard_thin",
+  "use_expansion_hack": false,
+  "spawn_overrides": {
+
+  }
+}

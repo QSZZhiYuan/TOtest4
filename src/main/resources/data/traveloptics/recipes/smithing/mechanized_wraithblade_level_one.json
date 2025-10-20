@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cataclysm:witherite_ingot"
+  },
+  "base": {
+    "item": "traveloptics:mechanized_wraithblade"
+  },
+  "result": {
+    "item": "traveloptics:mechanized_wraithblade_level_one"
+  },
+  "template": {
+    "item": "traveloptics:last_glow"
+  }
+}

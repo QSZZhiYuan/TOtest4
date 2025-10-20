@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "__comment": "all mobs that cannot be controlled with a totem of possession.",
+  "values": [
+    "traveloptics:enraged_dead_king",
+    "traveloptics:the_nightwarden"
+  ]
+}

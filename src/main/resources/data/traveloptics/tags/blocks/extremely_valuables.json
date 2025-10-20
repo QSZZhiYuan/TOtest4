@@ -1,0 +1,8 @@
+{
+  "__comment": "Astral sense can sense these blocks as valuables",
+  "replace": false,
+  "values": [
+    "minecraft:ancient_debris",
+    "irons_spellbooks:arcane_debris"
+  ]
+}

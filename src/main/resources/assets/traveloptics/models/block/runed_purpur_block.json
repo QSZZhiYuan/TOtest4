@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "traveloptics:block/runed_purpur_block",
+    "up": "traveloptics:block/runed_purpur_block",
+    "north": "traveloptics:block/runed_purpur_block",
+    "east": "traveloptics:block/runed_purpur_block",
+    "south": "traveloptics:block/runed_purpur_block",
+    "west": "traveloptics:block/runed_purpur_block",
+    "particle": "traveloptics:block/runed_purpur_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " AA",
+    " BA",
+    "C  "
+  ],
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:ancient_knowledge_fragment"
+    },
+    "B": {
+      "item": "traveloptics:withered_excrucis"
+    },
+    "C": {
+      "item": "irons_spellbooks:shriving_stone"
+    }
+  },
+  "result": {
+    "item": "traveloptics:excrucis",
+    "count": 1
+  },
+  "show_notification": true
+}

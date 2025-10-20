@@ -1,0 +1,51 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:forlorn_harbinger_robe"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.full_set_forlorn_harbinger.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.full_set_forlorn_harbinger.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:dark_gem_of_the_living_void",
+  "criteria": {
+    "forlorn_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:forlorn_harbinger_hood"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:forlorn_harbinger_robe"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:forlorn_harbinger_leggings"
+            ]
+          },
+          {
+            "items": [
+              "traveloptics:forlorn_harbinger_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["forlorn_armor"]],
+  "rewards": {
+    "experience": 100
+  }
+}

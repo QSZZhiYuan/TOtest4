@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:cursed_wraithblade_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.cursed_wraithblade_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.cursed_wraithblade_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:cursed_wraithblade",
+  "criteria": {
+    "max_wraithblade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:cursed_wraithblade_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_wraithblade"]],
+  "rewards": {
+    "experience": 400
+  }
+}

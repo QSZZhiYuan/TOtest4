@@ -1,0 +1,70 @@
+name: Build TO2
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Clean Loom cache (attempt 1)
+      run: |
+        rm -rf ~/.gradle/caches/fabric-loom
+        rm -rf ~/.gradle/caches/architectury-loom
+        ./gradlew clean --no-daemon
+      continue-on-error: true
+      
+    - name: Build with Gradle (attempt 1)
+      id: build1
+      run: ./gradlew build --no-daemon --stacktrace
+      continue-on-error: true
+      
+    - name: Clean and retry if failed (attempt 2)
+      if: steps.build1.outcome == 'failure'
+      run: |
+        rm -rf .gradle build common/build forge/build fabric/build
+        rm -rf ~/.gradle/caches/fabric-loom
+        rm -rf ~/.gradle/caches/architectury-loom
+        ./gradlew clean --no-daemon
+        
+    - name: Build with Gradle (attempt 2)
+      if: steps.build1.outcome == 'failure'
+      id: build2
+      run: ./gradlew build --no-daemon --refresh-dependencies --stacktrace
+      continue-on-error: true
+      
+    - name: Final retry if still failed (attempt 3)
+      if: steps.build2.outcome == 'failure'
+      run: |
+        rm -rf .gradle build common/build forge/build fabric/build
+        ./gradlew :forge:build --no-daemon --refresh-dependencies
+        
+    - name: Upload Forge JAR
+      uses: actions/upload-artifact@v4
+      with:
+        name: TOtset
+        path: build/libs/*.jar
+        if-no-files-found: error
+        
+    - name: Display build info
+      run: |
+        echo "Build completed successfully!"
+        echo "JAR files:"
+        ls -lh build/libs/*.jar

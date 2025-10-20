@@ -1,0 +1,17 @@
+{
+  "__comment": "notes down all the endstone related blocks for Dimensional spike texture variant, also might use it in other stuff in the future too",
+  "replace": false,
+  "values": [
+    "minecraft:end_stone",
+    "minecraft:end_stone_bricks",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_slab",
+    "cataclysm:polished_end_stone",
+    "cataclysm:polished_end_stone_slab",
+    "cataclysm:polished_end_stone_stairs",
+    "cataclysm:chiseled_end_stone_bricks",
+    "cataclysm:end_stone_pillar",
+    "cataclysm:void_infused_end_stone_bricks",
+    "cataclysm:end_stone_teleport_trap_bricks"
+  ]
+}

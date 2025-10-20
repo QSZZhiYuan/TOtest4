@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:stellothorn"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.stellothorn.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.stellothorn.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "parent": "traveloptics:free_the_nightwarden",
+  "criteria": {
+    "get_stellothorn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:stellothorn"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["get_stellothorn"]],
+  "rewards": {
+    "experience": 150
+  }
+}

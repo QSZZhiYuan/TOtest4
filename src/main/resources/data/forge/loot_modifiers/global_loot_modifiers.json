@@ -1,0 +1,49 @@
+{
+  "entries": [
+
+    "traveloptics:traveloptics/entity/tremorzilla_modifier",
+    "traveloptics:traveloptics/entity/hullbreaker_modifier",
+    "traveloptics:traveloptics/entity/luxtructosaurus_modifier",
+
+    "traveloptics:traveloptics/chest/abyssal_ruins_modifier",
+    "traveloptics:traveloptics/chest/toxic_ruins_modifier",
+    "traveloptics:traveloptics/chest/forlorn_ruins_modifier",
+    "traveloptics:traveloptics/chest/magnetic_ruins_modifier",
+    "traveloptics:traveloptics/chest/frosted_prison_treasure_modifier",
+    "traveloptics:traveloptics/chest/ancient_city_modifier",
+    "traveloptics:traveloptics/chest/catacombs_modifier",
+    "traveloptics:traveloptics/chest/random_imbue_curio_modifier",
+    "traveloptics:traveloptics/chest/acropolis_treasure_modifier",
+    "traveloptics:traveloptics/chest/ancient_city_ice_modifier",
+    "traveloptics:traveloptics/chest/impaled_icebreaker_captain_quarters_modifier",
+
+    "traveloptics:traveloptics/entity/leviathan_modifier",
+    "traveloptics:traveloptics/entity/ignis_modifier",
+    "traveloptics:traveloptics/entity/harbinger_modifier",
+    "traveloptics:traveloptics/entity/maledictus_modifier",
+    "traveloptics:traveloptics/entity/ender_guardian_modifier",
+    "traveloptics:traveloptics/entity/ancient_remnant_modifier",
+    "traveloptics:traveloptics/entity/netherite_monstrosity_modifier",
+    "traveloptics:traveloptics/entity/scylla_modifier",
+
+    "traveloptics:traveloptics/entity/amethyst_crab_modifier",
+    "traveloptics:traveloptics/entity/coralssus_modifier",
+    "traveloptics:traveloptics/entity/deepling_priest_modifier",
+    "traveloptics:traveloptics/entity/ender_golem_modifier",
+    "traveloptics:traveloptics/entity/ignited_berserker_modifier",
+    "traveloptics:traveloptics/entity/ignited_revenant_modifier",
+    "traveloptics:traveloptics/entity/kobolediator_modifier",
+    "traveloptics:traveloptics/entity/the_prowler_modifier",
+    "traveloptics:traveloptics/entity/wadjet_modifier",
+    "traveloptics:traveloptics/entity/forsaken_modifier",
+    "traveloptics:traveloptics/entity/gum_worm_modifier",
+    "traveloptics:traveloptics/entity/magnetron_modifier",
+    "traveloptics:traveloptics/entity/the_watcher_modifier",
+    "traveloptics:traveloptics/entity/tremorsaurus_modifier",
+    "traveloptics:traveloptics/entity/vallumraptor_modifier",
+    "traveloptics:traveloptics/entity/koboleton_modifier",
+    "traveloptics:traveloptics/entity/aptrgangr_modifier",
+    "traveloptics:traveloptics/entity/nucleeper_modifier"
+  ],
+  "replace": false
+}

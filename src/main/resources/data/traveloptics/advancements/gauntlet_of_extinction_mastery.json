@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:gauntlet_of_extinction_level_three"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.gauntlet_of_extinction_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.gauntlet_of_extinction_mastery.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "challenge"
+  },
+  "parent": "traveloptics:gauntlet_of_extinction",
+  "criteria": {
+    "max_extinction_gauntlet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traveloptics:gauntlet_of_extinction_level_three"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["max_extinction_gauntlet"]],
+  "rewards": {
+    "experience": 300
+  }
+}

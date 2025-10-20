@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "traveloptics:item/dark_gem_of_the_living_void"
+  }
+}

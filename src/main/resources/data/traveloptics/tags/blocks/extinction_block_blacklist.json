@@ -1,0 +1,7 @@
+{
+  "__comment": "Extinction spell's Asteroid impact can not destroy mentioned blocks",
+  "replace": false,
+  "values": [
+    "minecraft:bedrock"
+  ]
+}

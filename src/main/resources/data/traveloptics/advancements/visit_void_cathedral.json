@@ -1,0 +1,36 @@
+{
+  "display": {
+    "hidden": false,
+    "icon": {
+      "item": "traveloptics:obsidian_bookshelf"
+    },
+    "title": {
+      "translate": "advancements.traveloptics.visit_void_cathedral.title"
+    },
+    "description": {
+      "translate": "advancements.traveloptics.visit_void_cathedral.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "task"
+  },
+  "parent": "traveloptics:root",
+  "criteria": {
+    "void_cathedral": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "traveloptics:void_cathedral"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  }
+}

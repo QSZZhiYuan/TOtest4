@@ -1,0 +1,6 @@
+{
+  "parent": "traveloptics:displaysettings/supernova_staff_display",
+  "textures": {
+    "layer0": "traveloptics:item/supernova_staff"
+  }
+}

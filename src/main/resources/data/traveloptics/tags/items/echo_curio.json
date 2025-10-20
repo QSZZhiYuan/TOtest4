@@ -1,0 +1,16 @@
+{
+  "__comment": "items in this tag are treated as Echo curios",
+  "replace": false,
+  "values": [
+    "traveloptics:blood_echo",
+    "traveloptics:lightning_echo",
+    "traveloptics:ender_echo",
+    "traveloptics:holy_echo",
+    "traveloptics:eldritch_echo",
+    "traveloptics:evocation_echo",
+    "traveloptics:fire_echo",
+    "traveloptics:ice_echo",
+    "traveloptics:nature_echo",
+    "traveloptics:aqua_echo"
+  ]
+}

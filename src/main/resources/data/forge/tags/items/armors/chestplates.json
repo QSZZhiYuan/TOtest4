@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "traveloptics:deepling_mage_armor_robe",
+    "traveloptics:forlorn_harbinger_robe",
+    "traveloptics:primordial_crest_armor_chestplate",
+    "traveloptics:tectonic_crest_armor_chestplate",
+    "traveloptics:abyssal_hide_armor_robe",
+    "traveloptics:cursed_wraithguard_chestplate",
+    "traveloptics:mechanized_exoskeleton_chestplate"
+  ]
+}
